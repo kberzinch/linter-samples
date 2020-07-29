@@ -1,5 +1,9 @@
 {
-  "errors": [],
+  "errors": [
+    "Ignored error pattern #(?:Dynamic call to static method|Call to an undefined method) Illuminate\\\\Database\\\\Eloquent\\\\(?:Builder|Relations\\\\[a-zA-Z]+)?(?:<mixed>|<App\\\\[a-zA-Z]+>)?::(?:distinct|doesntHave|first|groupBy|has|havingRaw|join|leftJoin|orderBy|orderByRaw|orWhereNull|select|selectRaw|selectSub|where|whereBetween|whereDate|whereIn|whereNotNull|count|whereIn|whereBetween|sum|distinct|paid|active|accessActive|inactive|role|pending|pendingSwag|accessInactive|visible|whereNull|current|start|end|availableForPurchase)\\(\\)\\.# was not matched in reported errors.",
+    "Ignored error pattern #Access to an undefined property App\\\\[a-zA-Z]+\\|\\(Illuminate\\\\Database\\\\Eloquent\\\\Collection&iterable<App\\\\[a-zA-Z]+>\\)::\\$[a-zA-Z_]+.# was not matched in reported errors.",
+    "Ignored error pattern #Access to an undefined property App\\\\Payment::\\$aggregate\\.# was not matched in reported errors."
+  ],
   "files": {
     "/home/kristaps/php-checks/public/webhook.php": {
       "errors": 1,
@@ -13,7 +17,7 @@
     }
   },
   "totals": {
-    "errors": 0,
+    "errors": 3,
     "file_errors": 1
   }
 }
