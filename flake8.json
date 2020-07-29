@@ -1,0 +1,256 @@
+{
+  "src/check": [
+    {
+      "code": "BLK100",
+      "column_number": 7,
+      "filename": "src/check",
+      "line_number": 3,
+      "physical_line": "print('[]')\n",
+      "text": "Black would make changes."
+    }
+  ],
+  "src/in": [
+    {
+      "code": "I101",
+      "column_number": 1,
+      "filename": "src/in",
+      "line_number": 4,
+      "physical_line": "from sys import stdin, argv\n",
+      "text": "Imported names are in the wrong order. Should be argv, stdin"
+    },
+    {
+      "code": "I100",
+      "column_number": 1,
+      "filename": "src/in",
+      "line_number": 5,
+      "physical_line": "from os import path\n",
+      "text": "Import statements are in the wrong order. 'from os import path' should be before 'from sys import stdin, argv'"
+    },
+    {
+      "code": "BLK100",
+      "column_number": 11,
+      "filename": "src/in",
+      "line_number": 8,
+      "physical_line": "    print(f\"Unexpected number of parameters passed, expected exactly 1 but got {len(argv) - 1}\")\n",
+      "text": "Black would make changes."
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/in",
+      "line_number": 8,
+      "physical_line": "    print(f\"Unexpected number of parameters passed, expected exactly 1 but got {len(argv) - 1}\")\n",
+      "text": "line too long (96 > 79 characters)"
+    }
+  ],
+  "src/out": [
+    {
+      "code": "I101",
+      "column_number": 1,
+      "filename": "src/out",
+      "line_number": 3,
+      "physical_line": "from json import dumps, loads, load\n",
+      "text": "Imported names are in the wrong order. Should be dumps, load, loads"
+    },
+    {
+      "code": "I101",
+      "column_number": 1,
+      "filename": "src/out",
+      "line_number": 4,
+      "physical_line": "from sys import stdin, argv\n",
+      "text": "Imported names are in the wrong order. Should be argv, stdin"
+    },
+    {
+      "code": "I100",
+      "column_number": 1,
+      "filename": "src/out",
+      "line_number": 5,
+      "physical_line": "from subprocess import run\n",
+      "text": "Import statements are in the wrong order. 'from subprocess import run' should be before 'from sys import stdin, argv'"
+    },
+    {
+      "code": "I100",
+      "column_number": 1,
+      "filename": "src/out",
+      "line_number": 6,
+      "physical_line": "from os import getenv, path\n",
+      "text": "Import statements are in the wrong order. 'from os import getenv, path' should be before 'from subprocess import run'"
+    },
+    {
+      "code": "I100",
+      "column_number": 1,
+      "filename": "src/out",
+      "line_number": 7,
+      "physical_line": "from datetime import datetime\n",
+      "text": "Import statements are in the wrong order. 'from datetime import datetime' should be before 'from os import getenv, path'"
+    },
+    {
+      "code": "I201",
+      "column_number": 1,
+      "filename": "src/out",
+      "line_number": 8,
+      "physical_line": "from requests import patch, post\n",
+      "text": "Missing newline between import groups. 'from requests import patch, post' is identified as Third Party and 'from datetime import datetime' is identified as Stdlib."
+    },
+    {
+      "code": "BLK100",
+      "column_number": 23,
+      "filename": "src/out",
+      "line_number": 11,
+      "physical_line": "conclusion_options = (\"success\", \"failure\", \"neutral\", \"cancelled\", \"skipped\", \"timed_out\", \"action_required\")\n",
+      "text": "Black would make changes."
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 11,
+      "physical_line": "conclusion_options = (\"success\", \"failure\", \"neutral\", \"cancelled\", \"skipped\", \"timed_out\", \"action_required\")\n",
+      "text": "line too long (110 > 79 characters)"
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 20,
+      "physical_line": "# TODO check if source repo is the only directory in the input directory and log a warning if not\n",
+      "text": "line too long (97 > 79 characters)"
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 26,
+      "physical_line": "assert isinstance(concourse_input[\"source\"], dict), \"`source` must be a dict, check pipeline configuration\"\n",
+      "text": "line too long (107 > 79 characters)"
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 29,
+      "physical_line": "    assert source_field in concourse_input[\"source\"], \"Missing required field in `source`\"\n",
+      "text": "line too long (90 > 79 characters)"
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 34,
+      "physical_line": "repository = path.join(input_directory, concourse_input['source']['repository'])\n",
+      "text": "line too long (80 > 79 characters)"
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 39,
+      "physical_line": "git_rev_parse_output = run(['git', '-C', repository, 'rev-parse', 'HEAD'], text=True, capture_output=True)\n",
+      "text": "line too long (106 > 79 characters)"
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 42,
+      "physical_line": "git_remote_output = run(['git', '-C', repository, 'remote', '--verbose'], text=True, capture_output=True)\n",
+      "text": "line too long (105 > 79 characters)"
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 45,
+      "physical_line": "remote = git_remote_output.stdout.strip().split(\"\\n\")[0].split(\"\\t\")[1].split(\"/\")\n",
+      "text": "line too long (82 > 79 characters)"
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 47,
+      "physical_line": "api_base_url = 'https://' + ('api.github.com' if host == 'github.com' else host + '/api/v3')\n",
+      "text": "line too long (92 > 79 characters)"
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 52,
+      "physical_line": "details_url = getenv('ATC_EXTERNAL_URL') + '/teams/' + getenv('BUILD_TEAM_NAME') + '/pipelines/' + getenv('BUILD_PIPELINE_NAME') + '/jobs/' + getenv('BUILD_JOB_NAME') + '/builds/' + getenv('BUILD_NAME')\n",
+      "text": "line too long (202 > 79 characters)"
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 55,
+      "physical_line": "state_file_path = path.join(input_directory, concourse_input['source']['resource_name'], \"state.json\")\n",
+      "text": "line too long (102 > 79 characters)"
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 68,
+      "physical_line": "    assert \"params\" in concourse_input, \"`params` required to update an existing check\"\n",
+      "text": "line too long (87 > 79 characters)"
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 70,
+      "physical_line": "    assert isinstance(params, dict), \"`params` must be a dict, check pipeline configuration\"\n",
+      "text": "line too long (92 > 79 characters)"
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 72,
+      "physical_line": "    assert \"conclusion\" in params, \"`conclusion` required in `params` to update an existing check\"\n",
+      "text": "line too long (98 > 79 characters)"
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 76,
+      "physical_line": "    assert conclusion in conclusion_options, \"Invalid `conclusion` specified - refer to the GitHub API documentation for possible values\"\n",
+      "text": "line too long (137 > 79 characters)"
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 106,
+      "physical_line": "    response = patch(f\"{api_base_url}/repos/{owner}/{repo}/check-runs/{check_id}\", json=data, headers=headers)\n",
+      "text": "line too long (110 > 79 characters)"
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 107,
+      "physical_line": "    assert response.status_code == 200, f\"Got unexpected response code {response.status_code} from GitHub: {response.json()}\"\n",
+      "text": "line too long (125 > 79 characters)"
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 146,
+      "physical_line": "    response = post(f\"{api_base_url}/repos/{owner}/{repo}/check-runs\", json=data, headers=headers)\n",
+      "text": "line too long (98 > 79 characters)"
+    },
+    {
+      "code": "E501",
+      "column_number": 80,
+      "filename": "src/out",
+      "line_number": 147,
+      "physical_line": "    assert response.status_code == 201, f\"Got unexpected response code {response.status_code} from GitHub: {response.json()}\"\n",
+      "text": "line too long (125 > 79 characters)"
+    }
+  ]
+}

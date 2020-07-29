@@ -1,0 +1,30 @@
+[
+  {
+    "check_name": "PhanUnusedVariable",
+    "description": "NOOPError PhanUnusedVariable Unused definition of variable $gted_identifier",
+    "location": {
+      "lines": {
+        "begin": 39,
+        "end": 39
+      },
+      "path": "app/Traits/CreateOrUpdateUserFromBuzzAPI.php"
+    },
+    "severity": 5,
+    "type": "issue",
+    "type_id": 6035
+  },
+  {
+    "check_name": "PhanUnusedVariable",
+    "description": "NOOPError PhanUnusedVariable Unused definition of variable $gted_identifier",
+    "location": {
+      "lines": {
+        "begin": 44,
+        "end": 44
+      },
+      "path": "app/Traits/CreateOrUpdateUserFromBuzzAPI.php"
+    },
+    "severity": 5,
+    "type": "issue",
+    "type_id": 6035
+  }
+]

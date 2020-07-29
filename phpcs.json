@@ -1,0 +1,602 @@
+{
+  "files": {
+    "/var/www/php-checks/workspace/people-counter/.phan/config.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Console/Kernel.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Events/Punch.php": {
+      "errors": 1,
+      "messages": [
+        {
+          "column": 43,
+          "fixable": true,
+          "line": 34,
+          "message": "Closure not using \"$this\" should be declared static.",
+          "severity": 5,
+          "source": "SlevomatCodingStandard.Functions.StaticClosure.ClosureNotStatic",
+          "type": "ERROR"
+        }
+      ],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Exceptions/Handler.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Http/Controllers/UserController.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Http/Controllers/VisitController.php": {
+      "errors": 1,
+      "messages": [
+        {
+          "column": 59,
+          "fixable": true,
+          "line": 29,
+          "message": "Multi-line arrays must have a trailing comma after the last element.",
+          "severity": 5,
+          "source": "SlevomatCodingStandard.Arrays.TrailingArrayComma.MissingTrailingComma",
+          "type": "ERROR"
+        }
+      ],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Http/Controllers/VisitPunchController.php": {
+      "errors": 9,
+      "messages": [
+        {
+          "column": 5,
+          "fixable": true,
+          "line": 17,
+          "message": "Multiple traits per use statement are forbidden.",
+          "severity": 5,
+          "source": "SlevomatCodingStandard.Classes.TraitUseDeclaration.MultipleTraitsPerDeclaration",
+          "type": "ERROR"
+        },
+        {
+          "column": 23,
+          "fixable": true,
+          "line": 17,
+          "message": "Each imported trait must have its own \"use\" import statement",
+          "severity": 5,
+          "source": "PSR12.Traits.UseDeclaration.MultipleImport",
+          "type": "ERROR"
+        },
+        {
+          "column": 22,
+          "fixable": true,
+          "line": 38,
+          "message": "Referencing general \\Exception; use \\Throwable instead.",
+          "severity": 5,
+          "source": "SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly.ReferencedGeneralException",
+          "type": "ERROR"
+        },
+        {
+          "column": 22,
+          "fixable": true,
+          "line": 39,
+          "message": "Opening parenthesis of a multi-line function call must be the last content on the line",
+          "severity": 5,
+          "source": "PSR2.Methods.FunctionCallSignature.ContentAfterOpenBracket",
+          "type": "ERROR"
+        },
+        {
+          "column": 1,
+          "fixable": true,
+          "line": 40,
+          "message": "Multi-line function call not indented correctly; expected 16 spaces but found 20",
+          "severity": 5,
+          "source": "PSR2.Methods.FunctionCallSignature.Indent",
+          "type": "ERROR"
+        },
+        {
+          "column": 39,
+          "fixable": true,
+          "line": 40,
+          "message": "Closing parenthesis of a multi-line function call must be on a line by itself",
+          "severity": 5,
+          "source": "PSR2.Methods.FunctionCallSignature.CloseBracketLine",
+          "type": "ERROR"
+        },
+        {
+          "column": 17,
+          "fixable": true,
+          "line": 46,
+          "message": "Useless parentheses.",
+          "severity": 5,
+          "source": "SlevomatCodingStandard.PHP.UselessParentheses.UselessParentheses",
+          "type": "ERROR"
+        },
+        {
+          "column": 18,
+          "fixable": false,
+          "line": 46,
+          "message": "The use of function is_null() is forbidden",
+          "severity": 5,
+          "source": "Generic.PHP.ForbiddenFunctions.Found",
+          "type": "ERROR"
+        },
+        {
+          "column": 36,
+          "fixable": true,
+          "line": 46,
+          "message": "String \"Unknown\" does not require double quotes; use single quotes instead",
+          "severity": 5,
+          "source": "Squiz.Strings.DoubleQuoteUsage.NotRequired",
+          "type": "ERROR"
+        }
+      ],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Http/Kernel.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Http/Middleware/CASAuthenticate.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Http/Middleware/CheckForMaintenanceMode.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Http/Middleware/EncryptCookies.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Http/Middleware/TrimStrings.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Http/Middleware/TrustHosts.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Http/Middleware/TrustProxies.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Http/Middleware/VerifyCsrfToken.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Http/Requests/StoreUser.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Http/Requests/StoreVisit.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Http/Requests/StoreVisitPunch.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Http/Requests/UpdateUser.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Http/Requests/UpdateVisit.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Http/Resources/User.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Http/Resources/Visit.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Nova/Resource.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Nova/User.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Policies/UserPolicy.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Policies/VisitPolicy.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Providers/AppServiceProvider.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Providers/AuthServiceProvider.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Providers/BroadcastServiceProvider.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Providers/EventServiceProvider.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Providers/HorizonServiceProvider.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Providers/NovaServiceProvider.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Providers/RouteServiceProvider.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Traits/CreateOrUpdateUserFromBuzzAPI.php": {
+      "errors": 3,
+      "messages": [
+        {
+          "column": 26,
+          "fixable": true,
+          "line": 81,
+          "message": "Useless parentheses.",
+          "severity": 5,
+          "source": "SlevomatCodingStandard.PHP.UselessParentheses.UselessParentheses",
+          "type": "ERROR"
+        },
+        {
+          "column": 42,
+          "fixable": true,
+          "line": 81,
+          "message": "Yoda comparison is required.",
+          "severity": 5,
+          "source": "SlevomatCodingStandard.ControlStructures.RequireYodaComparison.RequiredYodaComparison",
+          "type": "ERROR"
+        },
+        {
+          "column": 58,
+          "fixable": true,
+          "line": 81,
+          "message": "Expected 1 space after \"?\"; newline found",
+          "severity": 5,
+          "source": "Squiz.WhiteSpace.OperatorSpacing.SpacingAfter",
+          "type": "ERROR"
+        }
+      ],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/User.php": {
+      "errors": 3,
+      "messages": [
+        {
+          "column": 9,
+          "fixable": true,
+          "line": 39,
+          "message": "Multi-line arrays must have a trailing comma after the last element.",
+          "severity": 5,
+          "source": "SlevomatCodingStandard.Arrays.TrailingArrayComma.MissingTrailingComma",
+          "type": "ERROR"
+        },
+        {
+          "column": 8,
+          "fixable": false,
+          "line": 45,
+          "message": "@var annotation of property \\App\\User::$appends does not specify type hint for its items.",
+          "severity": 5,
+          "source": "SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingTraversableTypeHintSpecification",
+          "type": "ERROR"
+        },
+        {
+          "column": 36,
+          "fixable": true,
+          "line": 74,
+          "message": "String \" \" does not require double quotes; use single quotes instead",
+          "severity": 5,
+          "source": "Squiz.Strings.DoubleQuoteUsage.NotRequired",
+          "type": "ERROR"
+        }
+      ],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/app/Visit.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/bootstrap/app.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/app.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/auth.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/broadcasting.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/bugsnag.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/cache.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/cas.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/cors.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/database.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/filesystems.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/hashing.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/horizon.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/logging.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/mail.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/nova.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/permission.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/queue.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/sanctum.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/services.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/session.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/view.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/config/websockets.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/database/factories/UserFactory.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/database/migrations/2014_10_12_000000_create_users_table.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/database/migrations/2019_08_19_000000_create_failed_jobs_table.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/database/migrations/2020_05_23_150341_create_visits_table.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/database/migrations/2020_05_23_150703_create_permission_tables.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/database/migrations/2020_05_23_154904_create_initial_roles_permissions.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/database/migrations/2020_05_24_160133_add_gtid_to_users.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/database/migrations/2020_05_24_225537_add_second_door_to_visits.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/database/migrations/2020_05_24_234029_add_punch_permissions.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/database/migrations/2020_05_25_022329_create_websockets_statistics_entries_table.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/resources/js/app.js": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/resources/js/bootstrap.js": {
+      "errors": 1,
+      "messages": [
+        {
+          "column": 1,
+          "fixable": true,
+          "line": 26,
+          "message": "File must end with a newline character",
+          "severity": 5,
+          "source": "Generic.Files.EndFileNewline.NotFound",
+          "type": "ERROR"
+        }
+      ],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/resources/lang/en/auth.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/resources/lang/en/pagination.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/resources/lang/en/passwords.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/resources/lang/en/validation.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/routes/api.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/routes/channels.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/routes/console.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/routes/web.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/server.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/tests/CreatesApplication.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/tests/Feature/ExampleTest.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/tests/TestCase.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/tests/Unit/ExampleTest.php": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    },
+    "/var/www/php-checks/workspace/people-counter/webpack.mix.js": {
+      "errors": 0,
+      "messages": [],
+      "warnings": 0
+    }
+  },
+  "totals": {
+    "errors": 18,
+    "fixable": 16,
+    "warnings": 0
+  }
+}

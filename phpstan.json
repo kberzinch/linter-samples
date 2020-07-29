@@ -1,0 +1,19 @@
+{
+  "errors": [],
+  "files": {
+    "/home/kristaps/php-checks/public/webhook.php": {
+      "errors": 1,
+      "messages": [
+        {
+          "ignorable": true,
+          "line": 895,
+          "message": "Variable $plain_log_urls might not be defined."
+        }
+      ]
+    }
+  },
+  "totals": {
+    "errors": 0,
+    "file_errors": 1
+  }
+}
